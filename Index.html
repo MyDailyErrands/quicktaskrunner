@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QuickTask Runner | Errand Services</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 24px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+section{
+    padding:50px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.pricing-table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.pricing-table th,
+.pricing-table td{
+    border:1px solid #ddd;
+    padding:12px;
+}
+
+.pricing-table th{
+    background:#1f2937;
+    color:white;
+}
+
+form{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+input, textarea, select{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 24px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>QuickTask Runner</h1>
+    <p>Too Busy? Let Me Run Your Errands.</p>
+    <a href="#booking" class="btn">Book Now</a>
+</header>
+
+<section>
+    <h2>About Us</h2>
+    <p>
+        We help busy individuals save time by handling everyday errands.
+        From grocery shopping and package pickups to post office runs and
+        returns, we provide reliable local assistance when you need it.
+    </p>
+</section>
+
+<section>
+    <h2>Our Services</h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Grocery Shopping</h3>
+            <p>We'll shop and deliver your groceries.</p>
+        </div>
+
+        <div class="card">
+            <h3>Prescription Pickup</h3>
+            <p>Fast and dependable pharmacy pickups.</p>
+        </div>
+
+        <div class="card">
+            <h3>Package Pickup</h3>
+            <p>Need something delivered or picked up? We've got it.</p>
+        </div>
+
+        <div class="card">
+            <h3>Returns & Exchanges</h3>
+            <p>Skip the lines and save time.</p>
+        </div>
+
+        <div class="card">
+            <h3>Post Office Runs</h3>
+            <p>Mailing packages, stamps, and more.</p>
+        </div>
+
+        <div class="card">
+            <h3>General Errands</h3>
+            <p>Custom tasks based on your needs.</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Pricing</h2>
+
+    <table class="pricing-table">
+        <tr>
+            <th>Service</th>
+            <th>Starting Price</th>
+        </tr>
+
+        <tr>
+            <td>Grocery Shopping</td>
+            <td>$20 + Grocery Cost</td>
+        </tr>
+
+        <tr>
+            <td>Prescription Pickup</td>
+            <td>$15</td>
+        </tr>
+
+        <tr>
+            <td>Package Pickup</td>
+            <td>$15</td>
+        </tr>
+
+        <tr>
+            <td>Returns & Exchanges</td>
+            <td>$20</td>
+        </tr>
+
+        <tr>
+            <td>Post Office Runs</td>
+            <td>$15</td>
+        </tr>
+
+        <tr>
+            <td>General Errands</td>
+            <td>$20</td>
+        </tr>
+    </table>
+
+    <p><strong>Bundle Discounts:</strong> 10% off 2 errands, 15% off 3+ errands.</p>
+</section>
+
+<section id="booking">
+    <h2>Book Your Errand</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" required>
+
+        <label>Phone Number</label>
+        <input type="tel" required>
+
+        <label>Email Address</label>
+        <input type="email">
+
+        <label>Service Needed</label>
+        <select>
+            <option>Grocery Shopping</option>
+            <option>Prescription Pickup</option>
+            <option>Package Pickup</option>
+            <option>Returns & Exchanges</option>
+            <option>Post Office Run</option>
+            <option>General Errand</option>
+        </select>
+
+        <label>Preferred Date</label>
+        <input type="date">
+
+        <label>Preferred Time</label>
+        <input type="time">
+
+        <label>Errand Details</label>
+        <textarea rows="5"></textarea>
+
+        <button type="submit">Submit Request</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 QuickTask Runner | Reliable Errand Services</p>
+</footer>
+
+</body>
+</html>
